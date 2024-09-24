@@ -45,7 +45,7 @@ Route::prefix('site')->as('site.')->group(function () {
             Route::get('/academic-programs', [AcademicAndResearchController::class, 'academicPrograms'])->name('academic_programs');
             Route::get('/academic-programs/{category}', [AcademicAndResearchController::class, 'academicDegreesPrograms'])->name('academic_degrees_programs');
         });
-    });
+    }); 
 
     //Business And Innovation Ecosystem
     Route::prefix('business-and-innovation-ecosystem')->as('business_and_innovation_ecosystem.')->group(function () {

@@ -76,21 +76,21 @@ class PageSeeder extends Seeder
                 'theme' => 'ACADEMIC AND RESEARCH HUB',
             ],
             [
-                'title' => 'British FAM College',
+                'title' => 'FAM College-UK',
                 'slug' => 'british-fam-college',
                 'content' => file_get_contents(public_path('html/british-fam-college.html')),
-                'meta_title' => 'British FAM College',
-                'meta_description' => 'Get details about British FAM College and its offerings.',
+                'meta_title' => 'FAM College-UK',
+                'meta_description' => 'Get details about FAM College-UK and its offerings.',
                 'theme' => 'ACADEMIC AND RESEARCH HUB',
             ],
-            // BUSINESS AND INNOVATION ECOSYSTEM Dropdown
+            // SMART Integrated Solutions and Consultations Dropdown
             [
-                'title' => 'SMART Consultancies',
+                'title' => 'Integrated eLearning Solutions',
                 'slug' => 'smart-consultancies',
                 'content' => file_get_contents(public_path('html/smart-consultancies.html')),
-                'meta_title' => 'SMART Consultancies',
-                'meta_description' => 'Learn about SMART Consultancies and how they can help your business.',
-                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'meta_title' => ' ntegrated eLearning Solutions',
+                'meta_description' => 'Learn about  ntegrated eLearning Solutions and how they can help your business.',
+                'theme' => 'SMART Integrated Solutions and Consultations',
             ],
             [
                 'title' => 'SMART Business Incubators',
@@ -98,7 +98,7 @@ class PageSeeder extends Seeder
                 'content' => file_get_contents(public_path('html/smart-incubators.html')),
                 'meta_title' => 'SMART Incubators',
                 'meta_description' => 'Explore our SMART Incubators and their benefits.',
-                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'theme' => 'SMART Integrated Solutions and Consultations',
             ],
             [
                 'title' => 'Remote Freelancing Platform',
@@ -126,15 +126,15 @@ class PageSeeder extends Seeder
             ],
             // GLOBAL ENGAGEMENT Dropdown
             [
-                'title' => 'Business Partnerships',
+                'title' => 'Our Regional Offices',
                 'slug' => 'business-partnerships',
                 'content' => file_get_contents(public_path('html/business-partnerships.html')),
-                'meta_title' => 'Business Partnerships',
+                'meta_title' => 'Our Regional Offices',
                 'meta_description' => 'Learn about our global business partnerships.',
                 'theme' => 'GLOBAL ENGAGEMENT',
             ],
             [
-                'title' => 'Communication Platforms',
+                'title' => 'Partners',
                 'slug' => 'communication-platforms',
                 'content' => file_get_contents(public_path('html/communication-platforms.html')),
                 'meta_title' => 'Communication Platforms',
@@ -394,7 +394,7 @@ class PageSeeder extends Seeder
                 'content' => file_get_contents(public_path('html/strategic-consulting.html')),
                 'meta_title' => 'Strategic Consulting',
                 'meta_description' => 'Expert guidance in business strategy development, market research, competitive intelligence, and operational efficiency.',
-                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'theme' => 'SMART Integrated Solutions and Consultations',
                 'parent_id' => Page::whereSlug('smart-consultancies')->first()->id,
             ],
             [
@@ -403,7 +403,7 @@ class PageSeeder extends Seeder
                 'content' => file_get_contents(public_path('html/technology-consulting.html')),
                 'meta_title' => 'Technology Consulting',
                 'meta_description' => 'Assistance with digital transformation, IT strategy, cybersecurity, and data analytics.',
-                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'theme' => 'SMART Integrated Solutions and Consultations',
                 'parent_id' => Page::whereSlug('smart-consultancies')->first()->id,
             ],
             [
@@ -412,7 +412,7 @@ class PageSeeder extends Seeder
                 'content' => file_get_contents(public_path('html/innovation-consulting.html')),
                 'meta_title' => 'Innovation Consulting',
                 'meta_description' => 'Support in innovation management, idea generation, intellectual property strategy, and technology commercialization.',
-                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'theme' => 'SMART Integrated Solutions and Consultations',
                 'parent_id' => Page::whereSlug('smart-consultancies')->first()->id,
             ],
             [
@@ -421,7 +421,7 @@ class PageSeeder extends Seeder
                 'content' => file_get_contents(public_path('html/sustainability-consulting.html')),
                 'meta_title' => 'Sustainability Consulting',
                 'meta_description' => 'Guidance on adopting sustainable business practices, environmental impact assessments, and green technology solutions.',
-                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'theme' => 'SMART Integrated Solutions and Consultations',
                 'parent_id' => Page::whereSlug('smart-consultancies')->first()->id,
             ],
             [
@@ -430,7 +430,7 @@ class PageSeeder extends Seeder
                 'content' => file_get_contents(public_path('html/startup-support-services.html')),
                 'meta_title' => 'Startup Support Services',
                 'meta_description' => 'Comprehensive services including business plan development, mentorship, access to funding, networking, and workspace.',
-                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'theme' => 'SMART Integrated Solutions and Consultations',
                 'parent_id' => Page::whereSlug('smart-incubators')->first()->id,
             ],
             [
@@ -439,7 +439,7 @@ class PageSeeder extends Seeder
                 'content' => file_get_contents(public_path('html/technology-development.html')),
                 'meta_title' => 'Technology Development',
                 'meta_description' => 'Support for research, prototyping, and intellectual property protection.',
-                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'theme' => 'SMART Integrated Solutions and Consultations',
                 'parent_id' => Page::whereSlug('smart-incubators')->first()->id,
             ],
             [
@@ -448,7 +448,7 @@ class PageSeeder extends Seeder
                 'content' => file_get_contents(public_path('html/market-access.html')),
                 'meta_title' => 'Market Access',
                 'meta_description' => 'Assistance with market entry, expansion, and global networking.',
-                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'theme' => 'SMART Integrated Solutions and Consultations',
                 'parent_id' => Page::whereSlug('smart-incubators')->first()->id,
             ],
             [
@@ -457,7 +457,7 @@ class PageSeeder extends Seeder
                 'content' => file_get_contents(public_path('html/scaling-up.html')),
                 'meta_title' => 'Scaling Up',
                 'meta_description' => 'Guidance on scaling businesses and achieving sustainable growth.',
-                'theme' => 'BUSINESS AND INNOVATION ECOSYSTEM',
+                'theme' => 'SMART Integrated Solutions and Consultations',
                 'parent_id' => Page::whereSlug('smart-incubators')->first()->id,
             ],
             //---- END SMART CONSULTING PAGES ---

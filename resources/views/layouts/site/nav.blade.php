@@ -41,24 +41,22 @@
                         class="nav-link dropdown-toggle {{ $activeTheme === 'ACADEMIC AND RESEARCH HUB' ? 'active' : '' }}"
                         data-bs-toggle="dropdown">ACADEMIC AND RESEARCH HUB</a>
                     <div class="dropdown-menu m-0 overflow-auto" style="max-height: 300px;">
-                        <a href="{{ route('site.academic_and_research.branch.index', 'our-branches') }}"
+                        {{-- <a href="{{ route('site.academic_and_research.branch.index', 'our-branches') }}"
                             class="dropdown-item {{ $currentSlug === 'our-branches' ? 'active' : '' }}">Our
-                            Branches</a>
+                            Branches</a> --}}
                         <a href="{{ route('site.academic_and_research.university.index', 'international-partnerships') }}"
                             class="dropdown-item {{ $currentSlug === 'international-partnerships' ? 'active' : '' }}">Universities</a>
                         <a href="{{ route('site.academic_and_research.university.index', 'local-universities') }}"
                             class="dropdown-item {{ $currentSlug === 'local-universities' ? 'active' : '' }} d-none">Local
                             Universities</a>
-                        <a href="{{ route('page', 'academic-venues') }}"
+                        {{-- <a href="{{ route('page', 'academic-venues') }}"
                             class="dropdown-item {{ $currentSlug === 'academic-venues' ? 'active' : '' }}">Academic
-                            Venues</a>
+                            Venues</a> --}}
                         <a href="{{ route('page', 'graduate-school-business-entrepreneurship') }}"
-                            class="dropdown-item {{ $currentSlug === 'graduate-school-business-entrepreneurship' ? 'active' : '' }} d-none">Graduate
+                            class="dropdown-item {{ $currentSlug === 'graduate-school-business-entrepreneurship' ? 'active' : '' }}">Graduate
                             School of Business & Entrepreneurship</a>
                         <a href="{{ route('page', 'british-fam-college') }}"
-                            class="dropdown-item {{ $currentSlug === 'british-fam-college' ? 'active' : '' }}">British
-                            FAM
-                            College</a>
+                            class="dropdown-item {{ $currentSlug === 'british-fam-college' ? 'active' : '' }}">FAM College-UK</a>
                     </div>
                 </div>
 
@@ -66,14 +64,14 @@
                 <div class="nav-item dropdown">
                     <a href="#"
                         class="nav-link dropdown-toggle {{ $activeTheme === 'BUSINESS AND INNOVATION ECOSYSTEM' ? 'active' : '' }}"
-                        data-bs-toggle="dropdown">BUSINESS AND INNOVATION ECOSYSTEM</a>
+                        data-bs-toggle="dropdown">SMART Integrated Solutions and Consultations</a>
                     <div class="dropdown-menu m-0 overflow-auto" style="max-height: 300px;">
                         <a href="{{ route('site.business_and_innovation_ecosystem.consulting_services.index', 'smart-consultancies') }}"
-                            class="dropdown-item {{ $currentSlug === 'smart-consultancies' ? 'active' : '' }}">SMART
-                            Consultancies</a>
-                        <a href="{{ route('page', 'smart-incubators') }}"
-                            class="dropdown-item {{ $currentSlug === 'smart-incubators' ? 'active' : '' }}">SMART Business
-                            Incubators</a>
+                            class="dropdown-item {{ $currentSlug === 'smart-consultancies' ? 'active' : '' }}">Integrated eLearning Solutions</a>
+                        <a href="/assets/files/Overview - FMPro Suite. v4 2024.pdf" target="_blank"
+                            class="dropdown-item">Facilities and Assets Management Solutions</a>
+                        <a href="/assets/files/IIDSC.pdf" target="_blank"
+                            class="dropdown-item">Infrastructure Information & Decision Support Centre (GEOMATICS/BIM /DSS/A.I)</a>
                     </div>
                 </div>
 
@@ -84,14 +82,12 @@
                         data-bs-toggle="dropdown">GLOBAL ENGAGEMENT</a>
                     <div class="dropdown-menu m-0 overflow-auto" style="max-height: 300px;">
                         <a href="{{ route('page', 'business-partnerships') }}"
-                            class="dropdown-item {{ $currentSlug === 'business-partnerships' ? 'active' : '' }}">Business
-                            Partnerships</a>
+                            class="dropdown-item {{ $currentSlug === 'business-partnerships' ? 'active' : '' }}">Our Regional Offices</a>
                         <a href="{{ route('page', 'communication-platforms') }}"
-                            class="dropdown-item {{ $currentSlug === 'communication-platforms' ? 'active' : '' }}">Communication
-                            Platforms</a>
-                        <a href="{{ route('page', 'global-collaborations') }}"
+                            class="dropdown-item {{ $currentSlug === 'communication-platforms' ? 'active' : '' }}">Partners</a>
+                        {{-- <a href="{{ route('page', 'global-collaborations') }}"
                             class="dropdown-item {{ $currentSlug === 'global-collaborations' ? 'active' : '' }}">Global
-                            Collaborations</a>
+                            Collaborations</a> --}}
                     </div>
                 </div>
 
