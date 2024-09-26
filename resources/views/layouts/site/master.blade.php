@@ -46,7 +46,7 @@
         <div class="row gx-0">
             <div class="col-lg-2 text-left">
                 <a href="{{ route('home') }}" class="navbar-brand p-0 text-white p-2">
-                    <img src="{{ asset('assets/common/logo.png') }}" width="100px" alt="" class="mt-2"
+                    <img src="{{ asset('assets/common/logo_new.png') }}" width="100px" alt="" class="mt-2"
                         >
                 </a>
             </div>

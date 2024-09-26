@@ -10,7 +10,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
     <a href="{{ route('home') }}" class="navbar-brand p-0">
-        <h1 class="m-0"><img src="{{ asset('assets/common/logo_dark.png') }}" alt=""></h1>
+        <h1 class="m-0"><img src="{{ asset('assets/common/logo_new.png') }}" alt=""></h1>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="fa fa-bars"></span> {{ config('app.name') }}
@@ -101,7 +101,7 @@
                             class="dropdown-item {{ $currentSlug === 'conventional-training' ? 'active' : '' }}">Conventional
                             Training</a>
                         <a href="{{ route('site.smart_training.index', 'professional-training') }}"
-                            class="dropdown-item {{ $currentSlug === 'professional-training' ? 'active' : '' }}">Professional
+                            class="dropdown-item {{ $currentSlug === 'professional-training' ? 'active' : '' }}">Certified Professional
                             Training</a>
                         <a href="{{ route('site.smart_training.index', 'accredited-training') }}"
                             class="dropdown-item {{ $currentSlug === 'accredited-training' ? 'active' : '' }}">Accredited
