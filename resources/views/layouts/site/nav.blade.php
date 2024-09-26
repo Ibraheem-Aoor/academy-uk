@@ -24,7 +24,7 @@
                     data-bs-toggle="dropdown">About</a>
                 <div class="dropdown-menu m-0 overflow-auto" style="max-height: 300px;">
                     <a href="{{ route('site.about.index') }}"
-                        class="dropdown-item {{ areActiveRoutes(['site.about.index']) }}">About BASC</a>
+                        class="dropdown-item {{ areActiveRoutes(['site.about.index']) }}">About</a>
                     <a href="{{ route('page', 'history') }}"
                         class="dropdown-item {{ $currentSlug === 'history' ? 'active' : '' }}">Our History</a>
                         @foreach ($team_categories as $team_category)
