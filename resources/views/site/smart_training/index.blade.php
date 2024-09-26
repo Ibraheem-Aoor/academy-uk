@@ -28,6 +28,13 @@
     @if (!$category->programs->isEmpty())
         <div class="container-fluid packages py-5" id="courses">
             <div class="container py-5">
+                @if($page->slug == 'professional-training')
+                <div class="row g-5">
+                    <div class="col-sm-12 text-center mt-5 p-5">
+                        <a href="/assets/files/FAM certification.pdf" target="_blank" class="btn btn-md btn-primary"><i class="fa fa-download"></i> Preview Facilties And Assets Management</a>
+                    </div>
+                </div>
+                @endif
                 <div class="mx-auto text-center " style="max-width: 900px;">
                     <h5 class="section-title px-3">{{ $category->name }}</h5>
                     <h1 class="mb-2">Explore Our {{ $category->name }} Programs</h1>

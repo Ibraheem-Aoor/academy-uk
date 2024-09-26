@@ -101,6 +101,14 @@ class PageSeeder extends Seeder
                 'theme' => 'SMART Integrated Solutions and Consultations',
             ],
             [
+                'title' => 'Infrastructure Information & Decision Support Centre (GEOMATICS/BIM /DSS/A.I)',
+                'slug' => 'infrastructure-information',
+                'content' => file_get_contents(public_path('html/Infrastructure_Information.html')),
+                'meta_title' => 'SMART Incubators',
+                'meta_description' => 'Explore our SMART Incubators and their benefits.',
+                'theme' => 'SMART Integrated Solutions and Consultations',
+            ],
+            [
                 'title' => 'Remote Freelancing Platform',
                 'slug' => 'remote-freelancing-platform',
                 'content' => file_get_contents(public_path('html/remote-freelancing-platform.html')),

@@ -18,7 +18,7 @@ class BaseSiteController extends Controller
 
     public function getPageModel($slug , $theme = null)
     {
-        return Page::query()->select(['intro_image', 'title', 'theme' , 'parent_id' , 'content'])->whereSlug($slug)->firstOrCreate([
+        return Page::query()->select(['intro_image', 'title', 'theme' , 'parent_id' , 'content' , 'slug'])->whereSlug($slug)->firstOrCreate([
             'slug' => $slug,
 
         ],[

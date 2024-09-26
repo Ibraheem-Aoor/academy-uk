@@ -73,7 +73,7 @@
                         eLearning Solutions</a>
                     <a href="/assets/files/Overview - FMPro Suite. v4 2024.pdf" target="_blank"
                         class="dropdown-item">Facilities and Assets Management Solutions</a>
-                    <a href="/assets/files/IIDSC.pdf" target="_blank" class="dropdown-item">Infrastructure Information &
+                    <a href="{{route('page' , 'infrastructure-information')}}"  class="dropdown-item">Infrastructure Information &
                         Decision Support Centre (GEOMATICS/BIM /DSS/A.I)</a>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                         Training</a>
                     <a href="{{ route('site.smart_training.index', 'e-training') }}"
                         class="dropdown-item {{ $currentSlug === 'e-training' ? 'active' : '' }}">E-training</a>
-                    <a href="{{ route('site.smart_training.index', 'remote-freelancing-platform') }}"
+                    <a href="http://welcome.london-college.org.uk/" target="__blank"
                         class="dropdown-item {{ $currentSlug === 'remote-freelancing-platform' ? 'active' : '' }}">Remote
                         Freelancing Platform</a>
                     <a href="{{ route('site.smart_training.index', 'smart-training-development') }}"

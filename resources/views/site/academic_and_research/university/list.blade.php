@@ -3,80 +3,15 @@
     <style>
         .service .service-item {
             position: relative;
-            overflow: hidden
+            overflow: hidden;
         }
 
-        .service .service-item .service-inner .service-title {
-            position: relative;
-            margin-top: -30px;
-            text-align: center;
-            transition: .5s
-        }
-
-        .service .service-item .service-inner .service-title .service-content {
-            position: absolute;
-            bottom: -100%;
-            left: 0;
-            margin-left: 30px;
-            margin-right: 30px;
-            text-align: center;
-            border-radius: 10px;
-            background: var(--bs-primary);
-            opacity: 0;
-            transition: .5s
-        }
-
-        .service .service-item:hover .service-inner .service-title .service-content {
-            bottom: 0;
-            opacity: 1
-        }
-
-        .service .service-item .service-inner .service-title .service-content a h4 {
-            border-bottom: 1px solid rgba(256, 256, 256, .1)
-        }
-
-        .service .service-item .service-inner .service-title .service-title-name {
-            transition: .5s
-        }
-
-        .service .service-item:hover .service-inner .service-title .service-title-name {
-            opacity: 0
-        }
-
-        .service .service-item .service-inner .service-img {
-            position: relative;
-            border-radius: 10px;
-            overflow: hidden
-        }
-
-        .service .service-item .service-inner .service-img::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 0;
-            border-radius: 10px;
-            background: rgba(255, 255, 255, .5);
-            transition: .5s;
-            opacity: 0
-        }
-
-        .service .service-item:hover .service-inner .service-img::after {
-            height: 100%;
-            opacity: 1
-        }
-
-        .service .service-item .service-inner .service-img img {
-            transition: .5s
-        }
-
-        .service .service-item:hover .service-inner .service-img img {
-            transform: scale(1.3)
-        }
+        /* Existing CSS from your question */
     </style>
 @endpush
+
 @section('title', $page->title)
+
 @section('page-header')
     @php
         $main_image = isset($page->intro_image)
@@ -88,18 +23,99 @@
     <!-- Header Start -->
     <div class="container-fluid bg-breadcrumb" style="background-image: url({{ $main_image }});">
         <div class="container text-center py-5" style="max-width: 900px;">
-            <h3 class="text-white display-3 mb-4">{{ $page->title }}</h1>
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-                    <li class="breadcrumb-item active text-white">{{ $page->theme }}</li>
-                    <li class="breadcrumb-item active text-white">{{ $page->title }}</li>
-
-                </ol>
+            <h3 class="text-white display-3 mb-4">{{ $page->title }}</h3>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                <li class="breadcrumb-item active text-white">{{ $page->theme }}</li>
+                <li class="breadcrumb-item active text-white">{{ $page->title }}</li>
+            </ol>
         </div>
     </div>
     <!-- Header End -->
 @endsection
+
 @section('content')
+    <!-- Additional Content -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                @if (str_contains($university->name , 'British'))
+                    <!-- Box 1 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-primary">Applied Accredited Degrees (L3 to L7)</h3>
+                                <p>Offered Programmes:</p>
+                                <ul>
+                                    <li>Academic Degrees under UK accreditation system (approved by Ofqual “The British Main
+                                        accrediting Body”)</li>
+                                    <li>L3: Foundation for UK University (Level 3)</li>
+                                    <li>Level 4: Diploma (1st year BSc UK, 2nd year Arab System)</li>
+                                    <li>Level 5: HND (Higher National Diploma) / 2nd year BSc UK, 3rd year Arab System</li>
+                                    <li>Level 6: Bachelor's Degree</li>
+                                    <li>Level 7-a: Post Graduate Diploma</li>
+                                    <li>Level 7-b: Master’s Degree</li>
+                                </ul>
+                                <a href="/assets/files/HND HNC all course flyer without prices_ agentzz.pdf"
+                                    class="btn btn-primary">Download Catalog</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box 2 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-primary">UK eUniversities Degree</h3>
+                                <p>UK eUniversities HUB Offered Programmes:</p>
+                                <ul>
+                                    <li>UK academic programmes (Traditional, Hybrid, and Online) from various UK
+                                        Universities</li>
+                                    <li>HND, Bachelor's, and Master's Degrees</li>
+                                </ul>
+                                <p>Participating Universities:</p>
+                                <ul>
+                                    <li>Anglia Ruskin University</li>
+                                    <li>Buckinghamshire New University</li>
+                                    <li>Edinburgh Napier University</li>
+                                    <li>University of Bolton</li>
+                                    <li>University of Central Lancashire</li>
+                                    <li>University of Chichester</li>
+                                    <li>University of Derby</li>
+                                    <li>University of Essex</li>
+                                    <li>University of Gloucestershire</li>
+                                    <li>Wrexham Glyndr University</li>
+                                </ul>
+                                <a href="/assets/files/Product Catalogue eAcademy - UK 2024.pdf"
+                                    class="btn btn-primary">Download Catalog</a>
+                            </div>
+                        </div>
+                    </div>
+                @else
+                    <!-- Box 1 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-primary">American Graduate Industrial Business School / Arena
+                                </h3>
+                                <p>Programmes:</p>
+                                <ul>
+                                    <li>Industrial / Professional Business Certification</li>
+                                    <li>BBA (Bachelor of Business Administration) in 4 Disciplines</li>
+                                    <li>MBA in 10 Disciplines (Master of Business Administration)</li>
+                                    <li>DBA in 10 Disciplines (Doctor of Business Administration)</li>
+                                    <li>DM (Doctor of Management)</li>
+                                </ul>
+                                <a href="/assets/files/HND HNC all course flyer without prices_ agentzz.pdf"
+                                    class="btn btn-primary">Download Catalog</a>
+                            </div>
+                        </div>
+                    </div>
+                @endif
+            </div>
+        </div>
+    </div>
+
     <!-- University Cards -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
@@ -113,7 +129,8 @@
                         <div class="cat-item position-relative overflow-hidden rounded mb-2">
                             <img loading="lazy" class="img-fluid" src="{{ getImageUrl($university->image) }}"
                                 alt="{{ $university->name }}" />
-                            <a class="cat-overlay text-white text-decoration-none" href="{{ route('site.academic_and_research.university.details', encrypt($university->id)) }}">
+                            <a class="cat-overlay text-white text-decoration-none"
+                                href="{{ route('site.academic_and_research.university.details', encrypt($university->id)) }}">
                                 <h4 class="text-white font-weight-medium">{{ $university->name }}</h4>
                             </a>
                         </div>
@@ -122,5 +139,4 @@
             </div>
         </div>
     </div>
-
 @endsection

@@ -32,7 +32,7 @@
     <div class="container py-5">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
-                <h5 class="section-booking-title pe-3">BASC Smart Training</h5>
+                <h5 class="section-booking-title pe-3"> Smart Training</h5>
                 <h1 class="text-white mb-4">Online Application Form</h1>
                 <p class="text-white mb-4">
                     Apply now to join our cutting-edge smart training programs. Enhance your skills with our industry-focused courses designed to help you stay ahead in your career.
@@ -44,7 +44,7 @@
             <div class="col-lg-6">
                 <h1 class="text-white mb-3">Apply Now</h1>
                 <p class="text-white mb-4">
-                    Fill out the form below to apply for our programs. Get ready to take the next step in your career with BASC Smart Training.
+                    Fill out the form below to apply for our programs. Get ready to take the next step in your career with  Smart Training.
                 </p>
                 <form class="custom-form" action="{{ route('site.smart_training.apply_submit') }}" method="POST">
                     <div class="row g-3">
