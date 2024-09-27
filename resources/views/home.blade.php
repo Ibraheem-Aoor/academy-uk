@@ -1,4 +1,46 @@
 @extends('layouts.site.master')
+@push('css')
+<style>
+    .accreditation-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between !important;
+      height: 100%;
+      padding: 1.5em;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 1.5em;
+      text-align: justify;
+    }
+    .accreditation-box img {
+      max-height: 150px;
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+    .accreditation-box h2 {
+      text-align: center;
+      margin-top: 1em;
+    }
+    .accreditation-box p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    .equal-height-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .equal-height-row .col-md-6, .equal-height-row .col-lg-4 {
+      display: flex;
+    }
+    @media (min-width: 992px) {
+      .equal-height-row .col-lg-4 {
+        max-width: 33.33%;
+      }
+    }
+  </style>
+
+@endpush
 @section('title', 'HOME')
 @section('carousel')
     <!-- Carousel Start -->
@@ -302,9 +344,126 @@
         </div>
     </div>
 
+    {{-- Accred --}}
+    <div class="container-fluid py-2">
+        <div class="container">
+          <div class="row">
+            <div class="text-center mb-4">
+              <h1>Accreditation</h1>
+            </div>
+          </div>
+          <br>
+          <div class="row equal-height-row ">
+            <!-- Jordanian Ministry of Education Recognition -->
+            <div class="col-md-6 col-lg-4 d-flex mt-2">
+              <div class="accreditation-box">
+                <img src="/assets/common/Jordan_coat_of_arms.png" alt="Jordanian Ministry of Education">
+                <h2>Jordanian Ministry of Education Recognition</h2>
+                <p>
+                  IAU’s online business programs are recognized by the Jordanian Ministry
+                  of Higher Education & Scientific Research. This means that Jordanians may study
+                  IAU’s online business programs and graduates may have an easier time demonstrating their
+                  qualifications when pursuing professional and educational opportunities in Jordan.
+                </p>
+              </div>
+            </div>
 
+            <!-- AMIDEAST -->
+            <div class="col-md-6 col-lg-4 d-flex mt-2">
+              <div class="accreditation-box">
+                <img src="/assets/common/am.jpg" alt="AMIDEAST">
+                <h2>AMIDEAST</h2>
+                <p>
+                  IAU's online programs and certificates are accredited and recognized by AMIDEAST.
+                  This kind of formal recognition ensures that your IAU degree will be accepted globally.
+                </p>
+              </div>
+            </div>
 
+            <!-- ACBSP -->
+            <div class="col-md-6 col-lg-4 d-flex mt-2">
+              <div class="accreditation-box">
+                <img src="/assets/common/Picture1.png" alt="ACBSP">
+                <h2>Accreditation Council for Business Schools and Programs (ACBSP)</h2>
+                <p>
+                  IAU is a member of the ACBSP and is a candidate for accreditation of its business
+                  and accounting programs. ACBSP is a global leader in specialized accreditation for business education.
+                </p>
+              </div>
+            </div>
 
+            <!-- CSAAVE -->
+            <div class="col-md-6 col-lg-4 d-flex mt-2">
+              <div class="accreditation-box">
+                <img src="/assets/common/logo-csaave.jpg" alt="CSAAVE">
+                <h2>California State Approving Agency for Veterans Education (CSAAVE)</h2>
+                <p>
+                  IAU is recognized by the California State Approving Agency for Veterans Education (CSAAVE)
+                  and is eligible for education benefits associated with the GI Bill® by the U.S. Department of Veterans Affairs.
+                </p>
+              </div>
+            </div>
+
+            <!-- CHEA -->
+            <div class="col-md-6 col-lg-4 d-flex mt-2">
+              <div class="accreditation-box">
+                <img src="/assets/common/Picture3.png" alt="CHEA">
+                <h2>Council for Higher Education Accreditation (CHEA)</h2>
+                <p>
+                  IAU is listed in the CHEA database of institutions accredited by recognized U.S. accrediting organizations.
+                  TRACS, which accredits IAU, is a CHEA-recognized body.
+                </p>
+              </div>
+            </div>
+
+            <!-- DAPIP -->
+            <div class="col-md-6 col-lg-4 d-flex mt-2">
+              <div class="accreditation-box">
+                <h2>Database of Accredited Postsecondary Institutions and Programs (DAPIP)</h2>
+                <p>
+                  IAU is listed in the Database of Accredited Postsecondary Institutions and Programs (DAPIP), maintained by the U.S.
+                  Department of Education’s Office of Postsecondary Education (OPE).
+                </p>
+              </div>
+            </div>
+
+            <!-- BPPE -->
+            <div class="col-md-6 col-lg-4 d-flex mt-2">
+              <div class="accreditation-box">
+                <img src="/assets/common/Picture4.png" alt="BPPE">
+                <h2>State of California Bureau for Private Postsecondary Education (BPPE)</h2>
+                <p>
+                  IAU’s approval to operate in California is based on provisions of the California Private Postsecondary Education Act of 2009,
+                  ensuring compliance with state standards.
+                </p>
+              </div>
+            </div>
+
+            <!-- SEVP -->
+            <div class="col-md-6 col-lg-4 d-flex mt-2">
+              <div class="accreditation-box">
+                <img src="/assets/common/Picture5.jpg" alt="SEVP">
+                <h2>Student and Exchange Visitor Program (SEVP)</h2>
+                <p>
+                  In March 2009, IAU received SEVP Certification, allowing it to issue Forms I-20 to prospective international students,
+                  enabling them to study in the U.S.
+                </p>
+              </div>
+            </div>
+
+            <!-- TRACS -->
+            <div class="col-md-6 col-lg-4 d-flex mt-2">
+              <div class="accreditation-box">
+                <img src="/assets/common/Picture6.png" alt="TRACS">
+                <h2>Transnational Association of Christian Colleges and Schools (TRACS)</h2>
+                <p>
+                  IAU is a member of TRACS, a CHEA-recognized accrediting organization, ensuring high standards of Christian higher education.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Packages Start -->
     <div class="container-fluid packages py-5">
